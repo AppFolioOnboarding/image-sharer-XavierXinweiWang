@@ -6,7 +6,9 @@
     "coffeescript": "1.12.7",
     "prop-types": "^15.6.1",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react-dom": "^16.8.4",
+    "webpack-cli": "^3.3.11",
+    "webpacker": "^4.6.0"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.4.0",
