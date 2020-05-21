@@ -1,0 +1,20 @@
+<div class="container-fluid">
+
+  <h1>Image Gallery</h1>
+
+  <%= link_to 'Upload New Masterpiece', new_image_path, class: "btn btn-primary" %>
+
+  <div class="row">
+    <% @images.each do |i| %>
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <div>
+            <%= link_to(image_tag(i.url, size:'160x90'), image_path(i.id)) %>
+          </div>
+          <p class="card-text"><%= i.title %></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+</div>
