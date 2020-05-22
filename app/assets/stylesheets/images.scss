@@ -1,3 +1,18 @@
 // Place all the styles related to the Images controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$title-size: 20px;
+$title-color: #FFAE00;
+$title-size--mod: 25px;
+$title-color--mod: #FF5100;
+
+.title{
+  font-size: $title-size;
+  color: $title-color;
+}
+
+.title:hover {
+  font-size: $title-size--mod;
+  color: $title-color--mod;
+}
