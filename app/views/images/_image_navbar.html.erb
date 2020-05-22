@@ -1,0 +1,14 @@
+<nav class="image-navbar navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <%= link_to 'Image Gallery', images_path, class: "navbar-brand" %>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <%= link_to 'Home', images_path, class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'New', new_image_path, class: "nav-link" %>
+      </li>
+    </ul>
+  </div>
+</nav>
