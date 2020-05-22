@@ -6,6 +6,8 @@ $title-size: 20px;
 $title-color: #FFAE00;
 $title-size--mod: 25px;
 $title-color--mod: #FF5100;
+$footer-background-color: #f5f5f5;
+$footer-height: 60px;
 
 .title{
   font-size: $title-size;
@@ -15,4 +17,15 @@ $title-color--mod: #FF5100;
 .title:hover {
   font-size: $title-size--mod;
   color: $title-color--mod;
+}
+
+#footer {
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  height: $footer-height;
+  background-color: $footer-background-color;
+  .footer-block {
+    margin: $title-size 0;
+  }
 }
