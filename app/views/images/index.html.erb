@@ -1,6 +1,6 @@
-<div class="container-fluid">
+<%= render partial: 'image_navbar' %>
 
-  <h1>Image Gallery</h1>
+<div class="container-fluid">
 
   <%= link_to 'Upload New Masterpiece', new_image_path, class: "btn btn-primary" %>
 
@@ -11,7 +11,7 @@
           <div>
             <%= link_to(image_tag(i.url, size:'160x90'), image_path(i.id)) %>
           </div>
-          <p class="card-text"><%= i.title %></p>
+          <p class="card-text title"><%= i.title %></p>
         </div>
       </div>
     <% end %>

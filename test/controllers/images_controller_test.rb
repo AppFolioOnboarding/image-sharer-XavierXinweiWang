@@ -17,7 +17,6 @@ class ImagesControllerTest < ActionDispatch::IntegrationTest
   test 'should get index' do
     get images_path
     assert_response :success
-    assert_select 'h1', 'Image Gallery'
   end
 
   test 'should get show' do
