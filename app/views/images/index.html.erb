@@ -8,12 +8,12 @@
 
   <div class="row">
     <% @images.each do |i| %>
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <div>
-            <%= link_to(image_tag(i.url, size:'160x90'), image_path(i.id)) %>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+        <div class="card">
+          <div class="card-body">
+            <%= link_to(image_tag(i.url, class: 'img-fluid'), image_path(i.id)) %>
+            <p class="card-text title"><%= i.title %></p>
           </div>
-          <p class="card-text title"><%= i.title %></p>
         </div>
       </div>
     <% end %>
